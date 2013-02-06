@@ -1,0 +1,10 @@
+{
+  "name": "t7-Frontend-Boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "latest",
+    "connect": "latest",
+    "bower": "latest"
+  }
+}
