@@ -3,6 +3,19 @@
   "dependencies": {
     "jquery": "~1.9.1",
     "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
-    "lodash": "~1.0.0-rc.3"
+    "lodash": "~1.0.0-rc.3",
+    "uri.js": "~1.8.3",
+    "requirejs": "~2.1.4",
+    "modernizr-latest": "http://modernizr.com/downloads/modernizr-latest.js",
+    "string": "https://github.com/jprichardson/string.js",
+    "qunit": "https://github.com/jquery/qunit.git#~1.11.0",
+    "normalize-css": "~2.1.0",
+    "jquery-mackjax": "latest",
+    "jquery-mockjax": "~1.5.1",
+    "require-css": "latest",
+    "require-text": "latest",
+    "requirejs-text": "~2.0.5",
+    "requirejs-domready": "~2.0.1",
+    "backbone": "~0.9.10"
   }
 }
