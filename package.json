@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "grunt": "latest",
+    "grunt-contrib-requirejs": "latest",
     "connect": "latest",
     "bower": "latest"
   }

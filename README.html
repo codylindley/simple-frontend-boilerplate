@@ -33,7 +33,7 @@
 		<dl>
 		  <dt><span class="label" >Step 1</span> Install <a href="http://nodejs.org/download/">NodeJS</a></dt>
 		  <dd>
-		  	This is very easy. Simply use the <a href="http://nodejs.org/download/">installer</a> for initial installation and updates.
+		  	<p>This is very easy. Simply use the <a href="http://nodejs.org/download/">installer</a> for initial installation and updates.</p>
 		  </dd>
 		</dl>
 		      <hr>
@@ -41,8 +41,9 @@
 		  <dt><span class="label" >Step 2</span> Checkout <a href="https://www.assembla.com/code/next-gen-collaboration-model/git/nodes">GIT Repository</a></a></dt>
 		  <br>
 		  <dd>
-		  	<span class="label label-info">GIT</span> git@git.assembla.com:next-gen-collaboration-model.git<br>
-		  	<span class="label label-info">HTTP</span> <a href="https://git.assembla.com/next-gen-collaboration-model.git">https://git.assembla.com/next-gen-collaboration-model.git</a>
+		  	<p><span class="label label-info">GIT</span> git@git.assembla.com:next-gen-collaboration-model.git</p>
+
+		  	<p><span class="label label-info">HTTP</span> <a href="https://git.assembla.com/next-gen-collaboration-model.git">https://git.assembla.com/next-gen-collaboration-model.git</a></p>
 		  </dd>
 		</dl>
 		<hr>
@@ -52,6 +53,15 @@
 		  <dd>
 		  	<p>Go to the directory of the repository you just checkout and run:</p>
 		  	<pre>> npm install</pre>
+
+		  	<p>This will install the follow node dependencies in <code>/node_moduels</code>:</p>
+
+		  	<pre>"devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-requirejs": "latest",
+    "connect": "latest",
+    "bower": "latest"
+  }</pre>
 		  </dd>
 		</dl>
 
@@ -64,6 +74,8 @@
 		  	<p>Go to the directory of the repository you just checkout and run:</p>
 		  	<pre>> bower install</pre>
 		  </dd>
+		  <p>This will install the follow components in <code>/public/components/thirdparty/</code>:</p>
+
 		</dl>
 
       <hr>

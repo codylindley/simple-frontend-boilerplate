@@ -2,6 +2,7 @@
   "name": "Name This Project",
   "dependencies": {
     "jquery": "~1.9.1",
-    "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip"
+    "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+    "lodash": "~1.0.0-rc.3"
   }
 }
