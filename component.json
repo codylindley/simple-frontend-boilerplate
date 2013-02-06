@@ -16,6 +16,7 @@
     "require-text": "latest",
     "requirejs-text": "~2.0.5",
     "requirejs-domready": "~2.0.1",
-    "backbone": "~0.9.10"
+    "backbone": "~0.9.10",
+    "handlerbars": "latest"
   }
 }
