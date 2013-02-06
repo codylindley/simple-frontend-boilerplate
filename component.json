@@ -1,5 +1,7 @@
 {
   "name": "Name This Project",
   "dependencies": {
+    "jquery": "~1.9.1",
+    "bootstrap": "http://twitter.github.com/bootstrap/assets/bootstrap.zip"
   }
 }
