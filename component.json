@@ -13,8 +13,8 @@
     "requirejs-text": "~2.0.5",
     "requirejs-domready": "~2.0.1",
     "backbone": "~0.9.10",
-    "handlerbars": "latest",
     "almond": "~0.2.4",
-    "string.js": "https://github.com/jprichardson/string.js.git#~1.2.0"
+    "string.js": "https://github.com/jprichardson/string.js.git#~1.2.0",
+    "handlebars.js": "~1.0.8"
   }
 }

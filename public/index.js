@@ -7,24 +7,19 @@ requirejs.config({
     //never includes a ".js" extension since
     //the paths config could be for a directory.
     paths: {
-		backbone: 'thirdparty/backbone/backbone',
-		jquery: 'thirdparty/jquery/jquery',
-		lodash: 'thirdparty/lodash/lodash.underscore',
+		backbone: '../libraries/backbone/backbone', //placed in global scope
+		jquery: '../libraries/jquery/jquery', //placed in global scope
+		lodash: '../libraries/lodash/lodash.underscore', //placed in global scope
+        string: '../libraries/string.js/lib/string',
+        handlebars: '../libraries/handlebars.js/dist/handlebars', //placed in global scope
 		globals: '../globals'
     },
     shim: {
         'globals': {
-            deps: ['lodash','jquery', 'backbone']
-        },
-        'lodash': {
-            exports: '_'
-        },
-        'jquery': {
-            exports: '$'
+            deps: ['lodash','jquery', 'handlebars','backbone']
         },
         'backbone': {
-			deps: ['lodash','jquery'],
-			exports: 'Backbone'
+			deps: ['lodash','jquery']
         }
     }
 });
@@ -35,6 +30,7 @@ console.log(globals);
 console.log(_);
 console.log($);
 console.log(Backbone);
+console.log(Handlebars);
 console.log(A);
 console.log(B);
 
