@@ -29,12 +29,13 @@ requirejs.config({
     }
 });
 
-requirejs(['globals','compoenentA/compoenentA'], function(globals,A){
+requirejs(['globals','compoenentA/A','compoenentB/B'], function(globals,A,B){
    
 console.log(globals);
 console.log(_);
 console.log($);
 console.log(Backbone);
 console.log(A);
+console.log(B);
 
 });
