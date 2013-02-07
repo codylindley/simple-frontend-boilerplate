@@ -1,4 +1,6 @@
-define(['globals'], function(globals) {
+define(['globals','requireText!componentA/text.html'], function(globals,html) {
+
+	console.log(html);
    
 	console.log(globals);
 	console.log(_);

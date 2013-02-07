@@ -10,21 +10,28 @@ requirejs.config({
 		backbone: '../libraries/backbone/backbone', //placed in global scope
 		jquery: '../libraries/jquery/jquery', //placed in global scope
 		lodash: '../libraries/lodash/lodash.underscore', //placed in global scope
-        string: '../libraries/string.js/lib/string',
         handlebars: '../libraries/handlebars.js/dist/handlebars', //placed in global scope
-		globals: '../globals'
+        mockjax: '../libraries/jquery-mockjax/jquery.mockjax', //placed in jQuery namespace
+		globals: '../globals',
+        string: '../libraries/string.js/lib/string', //normal AMD
+        requireDomready: '../libraries/requirejs-domready/domready', //require plugins
+        requireText: '../libraries/requirejs-text/text', //require plugins
+        requireCSS: '../libraries/requirejs-css/css', //require plugins
     },
     shim: {
         'globals': {
-            deps: ['lodash','jquery', 'handlebars','backbone']
+            deps: ['lodash','jquery', 'handlebars','backbone','mockjax']
         },
         'backbone': {
 			deps: ['lodash','jquery']
+        },
+        'mockjax': {
+            deps: ['jquery']
         }
     }
 });
 
-requirejs(['globals','componentA/A','componentB/B'], function(globals,A,B){
+requirejs(['requireDomready!','globals','componentA/A','componentB/B'], function(globals,A,B){
    
 console.log(globals);
 console.log(_);
