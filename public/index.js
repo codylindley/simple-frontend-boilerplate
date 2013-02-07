@@ -16,7 +16,7 @@ requirejs.config({
         string: '../libraries/string.js/lib/string', //normal AMD
         requireDomready: '../libraries/requirejs-domready/domready', //require plugins
         requireText: '../libraries/requirejs-text/text', //require plugins
-        requireCSS: '../libraries/requirejs-css/css', //require plugins
+        requireCSS: '../libraries/require-css/css', //require plugins
     },
     shim: {
         'globals': {
@@ -27,6 +27,11 @@ requirejs.config({
         },
         'mockjax': {
             deps: ['jquery']
+        }
+    },
+    map: {
+        '*': {
+            'requireCSS': '../../libraries/require-css/css' // or whatever the path to require-css is
         }
     }
 });

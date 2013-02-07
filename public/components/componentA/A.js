@@ -1,4 +1,4 @@
-define(['globals','requireText!componentA/text.html'], function(globals,html) {
+define(['globals','requireText!componentA/text.html','requireCSS!componentA/sheet'], function(globals,html) {
 
 	console.log(html);
    
