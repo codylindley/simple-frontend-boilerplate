@@ -29,7 +29,7 @@ requirejs.config({
     }
 });
 
-requirejs(['globals','compoenentA/A','compoenentB/B'], function(globals,A,B){
+requirejs(['globals','componentA/A','componentB/B'], function(globals,A,B){
    
 console.log(globals);
 console.log(_);
