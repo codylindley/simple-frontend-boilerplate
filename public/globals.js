@@ -1,6 +1,5 @@
 window.namespace = function(win, doc, undefined, $, _){
 
-
 	//private properties
 	var privateValue = 'privateValue';
 	var privateMethod = function(){
@@ -22,6 +21,7 @@ window.namespace = function(win, doc, undefined, $, _){
 
 	//public, can also place global constants here
 	return {
+		publicValue:publicValue,
 		publicMethod:publicMethod
 	};
 

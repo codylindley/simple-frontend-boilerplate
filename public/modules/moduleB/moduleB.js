@@ -20,8 +20,9 @@ window.moduleB = function(win, doc, undefined, $, _){
 
 	}();
 
-	//public, can also place global constants here
+	//public
 	return {
+		publicValue:publicValue,
 		publicMethod:publicMethod
 	};
 
