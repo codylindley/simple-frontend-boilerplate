@@ -1,4 +1,4 @@
-window.namespace = function(win, doc, undefined, $, _){
+window.moduleB = function(win, doc, undefined, $, _){
 
 
 	//private properties
