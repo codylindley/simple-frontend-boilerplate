@@ -58,7 +58,7 @@ This will install the follow node dependencies in `/node_modules`:
     "bower": "latest",
     "grunt-contrib-mincss": "~0.3.2",
     "grunt-contrib-handlebars": "~0.3.5"
-  }
+}
 ```
 
 The above code can be found in `package.json`
