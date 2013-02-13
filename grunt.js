@@ -5,7 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     handlebars: {
-      'public/build/hbs.js': [ 'public/modules/**/*.handlebars' ]
+      'public/build/hbs.js': [ 'public/modules/**/*.hbs' ]
     },
 
     mincss: {
@@ -33,7 +33,8 @@ module.exports = function(grunt) {
           'public/build/hbs.js',
           //Modules used on this page
           'public/modules/moduleA/moduleA.js',
-          'public/modules/moduleB/moduleB.js'
+          'public/modules/moduleB/moduleB.js',
+          'public/modules/moduleB/moduleC.js'
         ],
         dest: 'public/build/index.min.js'
       }

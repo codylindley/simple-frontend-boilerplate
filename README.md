@@ -1,12 +1,15 @@
+---
 #Simple Frontend Boilerplate
+---
 
-A starting point to develop websites or web applications without forcing a specific MV* framework or modular loader.
+A starting point to develop websites or web applications without forcing a specific MV* framework or module loader.
 
 Instructions:
 
 * [Setup](#setup)
 * [Startup](#startup)
 * [Configuration](#configuration)
+* [Build](#build)
 * [Explanation](#explanation)
 
 ---
@@ -41,7 +44,7 @@ This will install the follow node dependencies in `/node_moduels`:
 }
 ```
 
-#####Step 4: Get bower components/libraries
+#####Step 4: Get bower libraries
 
 You can configure what bower retrieves by editing the dependencies in the `component.json` before running the install command. Remove or add anything you want or checkout the Bower components
 Go to the root directory and run:
@@ -50,7 +53,7 @@ Go to the root directory and run:
 > bower install
 ```
 
-This will install the follow components in `/public/components/thirdparty/`:
+This will install the follow libraries in `/public/libraries/thirdparty/`:
 
 ```js
 "dependencies": {
@@ -90,3 +93,9 @@ Go to the root directory and run:
 ```
 
 This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5` (e.g. `http://localhost:3044`). Now open a web browser and visit the `http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5`
+
+##Configuration
+
+##Build
+
+##Explanation
