@@ -2,6 +2,13 @@
 
 A starting point to develop websites or web applications without forcing a specific MV* framework or modular loader.
 
+Instructions:
+
+* [Setup](Setup)
+* Startup
+* Configuration
+* Documentation
+
 ---
 
 ##Setup
@@ -68,8 +75,6 @@ var connect = require("connect");
 
 connect().use(connect.static('public')).listen(3044);
 ```
-
----
 
 ##Startup
 
