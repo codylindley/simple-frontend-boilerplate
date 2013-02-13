@@ -124,9 +124,9 @@ Open the `public/global.js` file and change the global namespace (default is `sf
 
 Additionally, open each default module:
 
-* `public/modules/moduleA.modulesA.js`
-* `public/modules/moduleA.modulesB.js`
-* `public/modules/moduleA.modulesC.js`
+* `public/modules/moduleA/moduleA.js`
+* `public/modules/moduleB/moduleB.js`
+* `public/modules/moduleC/moduleC.js`
 
 Update the namespace used in the module files (i.e. replace `sfb` with your custom namespace).
 
