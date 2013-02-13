@@ -4,10 +4,10 @@ A starting point to develop websites or web applications without forcing a speci
 
 Instructions:
 
-* [Setup](#Setup)
-* Startup
-* Configuration
-* Documentation
+* [Setup](#setup)
+* [Startup](#startup)
+* [Configuration](#configuration)
+* [Explanation](#explanation)
 
 ---
 
@@ -19,7 +19,7 @@ Use the [installer](http://nodejs.org/download/) for initial installation and up
 
 #####Step 2: Download Code
 
-Either download or GIT clone this repository so that its on your local computer.
+Either download (i.e. ZIP) or GIT clone this repository so that its on your local computer.
 
 #####Step 3: Install NPM packages
 
@@ -69,6 +69,8 @@ This will install the follow components in `/public/components/thirdparty/`:
 
 #####Step 5: Configure port in server.js
 
+Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, once the server was running, the html pages found in `/public` would be avaliable at `http://localhost:3044`.
+
 
 ```js
 var connect = require("connect");
@@ -87,4 +89,4 @@ Go to the root directory and run:
 > node server.js
 ```
 
-This will run the /public/index.html at http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5 (e.g. http://localhost:3044)
+This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5` (e.g. `http://localhost:3044`). Now open a web browser and visit the `http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5`
