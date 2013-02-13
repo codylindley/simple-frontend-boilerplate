@@ -4,7 +4,7 @@ A starting point to develop websites or web applications without forcing a speci
 
 Instructions:
 
-* [Setup](Setup)
+* [Setup](#Setup)
 * Startup
 * Configuration
 * Documentation
