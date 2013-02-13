@@ -2,7 +2,7 @@
 #Simple Frontend Boilerplate
 ---
 
-A starting point to develop websites or web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with some application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
+A starting point to develop websites or small web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
 
 * [The Stack](#the-stack)
 * [Startup](#startup)
@@ -139,6 +139,10 @@ Go to the root directory and run:
 > grunt
 ```
 
-This will create minified versions of the all the css, js, and .hbs files in `public/build/`. Have a look at the `grunt.js` file to configure the build.
+This will create minified versions of the css and js files and precompile the handlebars files in `public/build/`. Have a look at the `grunt.js` file to configure the build.
+
+After running the first build, its possible to use the minified files when viewing in a browser by adding `?compress=true` to the end of the url.
 
 ##Explanation
+
+coming soon.
