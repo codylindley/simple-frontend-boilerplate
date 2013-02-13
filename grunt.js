@@ -5,7 +5,18 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
     handlebars: {
-      'public/build/hbs.js': [ 'public/modules/**/*.hbs' ]
+      compile: {
+        options: {
+          namespace: 'Handlebars.templates',
+          wrapped: true,
+          processName: function(filename) {
+            return filename.split('/').pop().split('.')[0];
+          }
+        },
+        files: {
+          'public/build/hbs.js': 'public/modules/**/*.hbs'
+        }
+      }
     },
 
     mincss: {
@@ -32,14 +43,14 @@ module.exports = function(grunt) {
           'public/libraries/thirdparty/modernizr-latest/index.js',
           'public/libraries/thirdparty/string.js/lib/string.js',
           'public/libraries/thirdparty/director/build/director.js',
-          'public/libraries/thirdparty/handlebars.js/dist/handlebars.js',
+          'public/libraries/thirdparty/handlebars.js/dist/handlebars.runtime.js',
           'public/libraries/getHandlerBarsTemp/getHandlerBarsTemp.js',
           //must be after the handler bars files
           'public/build/hbs.js',
           //Modules used on this page
           'public/modules/moduleA/moduleA.js',
           'public/modules/moduleB/moduleB.js',
-          'public/modules/moduleB/moduleC.js'
+          'public/modules/moduleC/moduleC.js'
         ],
         dest: 'public/build/index.min.js'
       }
@@ -48,7 +59,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-mincss');
-  grunt.loadNpmTasks('grunt-handlebars-js');
+  grunt.loadNpmTasks('grunt-contrib-handlebars');
 
   // Default task.
   grunt.registerTask('default', ['handlebars','mincss','min']);

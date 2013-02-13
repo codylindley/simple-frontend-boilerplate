@@ -22,7 +22,7 @@
         <script src="/libraries/thirdparty/yepnope/yepnope.1.5.4-min.js"></script>
 
         <script>
-            if(window.location.hostname === 'localhost'){
+            if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
                 yepnope({
                     load:[
                         //Libraries used on this page
@@ -54,7 +54,7 @@
         <p class="lead">A starting point to develop websites or web applications without forcing a specific MV* framework or modular loader.</p>
 
         <script>
-            if(window.location.hostname === 'localhost'){
+            if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
                 yepnope({load:[
                     //Libraries used on this page
                     '/libraries/thirdparty/jquery/jquery.js', 
