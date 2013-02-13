@@ -4,15 +4,29 @@
 
 A starting point to develop websites or web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with some application like interfaces, or very small web applications that only require a handfull of modules not hundreds.
 
-Instructions:
-
-* [Setup](#setup)
+* [The Stack](#thestack)
 * [Startup](#startup)
 * [Configuration](#configuration)
 * [Build](#build)
 * [Explanation](#explanation)
 
 ---
+
+##The Stack
+
+* [NodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
+* [grunt](http://gruntjs.com/)
+* [connect](http://www.senchalabs.org/connect/)
+* [Bower](http://twitter.github.com/bower/)
+* [jQuery](http://jquery.com/)
+* [lodash](http://lodash.com/)
+* [Modernizr](http://modernizr.com/)
+* [handlebars.js](http://handlebarsjs.com/)
+* [yepnope](http://yepnopejs.com/)
+* [normalize.css](http://necolas.github.com/normalize.css/)
+* [string.js](http://stringjs.com/)
+* [js-url](https://github.com/websanova/js-url)
+* [director](https://github.com/flatiron/director)
 
 ##Setup
 
@@ -63,7 +77,6 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
     "jquery": "~1.9.1",
     "lodash": "~1.0.0-rc.3",
     "modernizr-latest": "http://modernizr.com/downloads/modernizr-latest.js",
-    "qunit": "https://github.com/jquery/qunit.git#~1.11.0",
     "normalize-css": "~2.1.0",
     "string.js": "https://github.com/jprichardson/string.js.git#~1.2.0",
     "js-url": "https://github.com/websanova/js-url.git#~1.7.5",
@@ -77,7 +90,7 @@ The above code can be found in `component.json`
 
 #####Step 5: Configure port in server.js
 
-Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, once the server was running, the html pages found in `/public` would be avaliable at `http://localhost:3044`.
+Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, based on the code below, once the server was running the html pages found in `/public` would be avaliable at `http://localhost:3044`.
 
 
 ```js

@@ -1,4 +1,4 @@
-window.moduleA = function(win, doc, undefined, $, _){
+window.moduleA = function(win, doc, undefined, $, _, Modernizr){
 
 
 	var compiledModuleATemplate = Handlebars.getTemplate('/modules/moduleA/moduleA.hbs');
@@ -32,4 +32,4 @@ window.moduleA = function(win, doc, undefined, $, _){
 		publicMethod:publicMethod
 	};
 
-}(window, document, undefined, jQuery, _);
+}(window, document, undefined, jQuery, _, Modernizr);
