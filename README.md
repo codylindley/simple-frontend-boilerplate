@@ -1,6 +1,6 @@
 #Simple Frontend Boilerplate
 
-A starting point to develop websites or web applications without forcing an MV* framework or modular loader specification.
+A starting point to develop websites or web applications without forcing a specific MV* framework or modular loader.
 
 ---
 
