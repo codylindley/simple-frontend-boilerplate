@@ -15,7 +15,10 @@ module.exports = function(grunt) {
             'public/libraries/thirdparty/normalize-css/normalize.css',
             'public/libraries/customTwitterBootstrap/bootstrapBase.css',
             'public/libraries/thirdparty/font-awesome/css/font-awesome.css',
-            'public/globals.css'
+            'public/globals.css',
+            'public/modules/moduleA/moduleA.css',
+            'public/modules/moduleB/moduleB.css',
+            'public/modules/moduleC/moduleC.css'
           ]
         }
       }
