@@ -26,7 +26,7 @@ window.moduleA = function(win, doc, undefined, $, _){
 
 	}();
 
-	//public
+	//public interface
 	return {
 		publicValue:publicValue,
 		publicMethod:publicMethod
