@@ -25,13 +25,13 @@
             if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
                 yepnope({
                     load:[
-                        //Libraries used on this page
+                        //CSS libraries used on this page
                         '/libraries/thirdparty/normalize-css/normalize.css',
                         '/libraries/customTwitterBootstrap/bootstrapBase.css',
                         '/libraries/thirdparty/font-awesome/css/font-awesome.css',
-                        //global css
+                        //global css file
                         '/globals.css',
-                        //Modules css used on this page
+                        //CSS module used on this page
                         '/modules/moduleA/moduleA.css',
                         '/modules/moduleB/moduleB.css',
                         '/modules/moduleC/moduleC.css'
@@ -56,7 +56,7 @@
         <script>
             if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
                 yepnope({load:[
-                    //Libraries used on this page
+                    //JS Libraries used on this page
                     '/libraries/thirdparty/jquery/jquery.js', 
                     '/libraries/thirdparty/lodash/lodash.js',
                     '/libraries/thirdparty/modernizr-latest/index.js',
@@ -67,7 +67,7 @@
                     '/libraries/projectSpecificLibrary/projectSpecificLib.js',
                     //global.js (includes router setup, contants, global namespace, and initial application setup)
                     '/globals.js',
-                    //Modules used on this page
+                    //JS modules used on this page
                     '/modules/moduleA/moduleA.js',
                     '/modules/moduleB/moduleB.js',
                     '/modules/moduleC/moduleC.js'

@@ -2,7 +2,7 @@
 #Simple Frontend Boilerplate
 ---
 
-A starting point to develop websites or web applications without forcing a specific MV* framework or module loader.
+A starting point to develop websites or web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with some application like interfaces, or very small web applications that only require a handfull of modules not hundreds.
 
 Instructions:
 
@@ -35,7 +35,7 @@ Go to the root directory and run:
 This will install the follow node dependencies in `/node_modules`:
 
 ```js
-  "devDependencies": {
+"devDependencies": {
     "grunt": "latest",
     "connect": "latest",
     "bower": "latest",
@@ -43,6 +43,8 @@ This will install the follow node dependencies in `/node_modules`:
     "grunt-contrib-handlebars": "~0.3.5"
   }
 ```
+
+The above code can be found in `package.json`
 
 #####Step 4: Get bower libraries
 
@@ -70,6 +72,8 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
     "yepnope": "~1.5.4"
 }
 ```
+
+The above code can be found in `component.json`
 
 #####Step 5: Configure port in server.js
 
