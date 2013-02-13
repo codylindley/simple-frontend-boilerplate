@@ -1,10 +1,8 @@
 {
-  "name": "Name This Project",
   "dependencies": {
     "jquery": "~1.9.1",
     "lodash": "~1.0.0-rc.3",
     "modernizr-latest": "http://modernizr.com/downloads/modernizr-latest.js",
-    "qunit": "https://github.com/jquery/qunit.git#~1.11.0",
     "normalize-css": "~2.1.0",
     "string.js": "https://github.com/jprichardson/string.js.git#~1.2.0",
     "js-url": "https://github.com/websanova/js-url.git#~1.7.5",

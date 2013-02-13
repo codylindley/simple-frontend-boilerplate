@@ -1,4 +1,7 @@
-window.namespace = function(win, doc, undefined, $, _){
+//global namespace
+window.sfb = {};
+
+window.sfb.run = function(win, doc, undefined, $, _){
 
 	//private properties
 	var privateValue = 'privateValue';

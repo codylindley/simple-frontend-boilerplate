@@ -2,9 +2,9 @@
 #Simple Frontend Boilerplate
 ---
 
-A starting point to develop websites or web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with some application like interfaces, or very small web applications that only require a handfull of modules not hundreds.
+A starting point to develop websites or web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with some application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
 
-* [The Stack](#thestack)
+* [The Stack](#the-stack)
 * [Startup](#startup)
 * [Configuration](#configuration)
 * [Build](#build)
@@ -14,23 +14,26 @@ A starting point to develop websites or web applications without forcing a speci
 
 ##The Stack
 
-* [NodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
-* [grunt](http://gruntjs.com/)
-* [connect](http://www.senchalabs.org/connect/)
-* [Bower](http://twitter.github.com/bower/)
+* [nodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
+	* [grunt](http://gruntjs.com/)
+		* [grunt-contrib-mincss](https://github.com/gruntjs/grunt-contrib-mincss)
+		* [grunt-contrib-handlebars](https://github.com/gruntjs/grunt-contrib-handlebars)
+	* [connect](http://www.senchalabs.org/connect/)
+	* [bower](http://twitter.github.com/bower/)
 * [jQuery](http://jquery.com/)
 * [lodash](http://lodash.com/)
-* [Modernizr](http://modernizr.com/)
+* [modernizr](http://modernizr.com/)
 * [handlebars.js](http://handlebarsjs.com/)
 * [yepnope](http://yepnopejs.com/)
 * [normalize.css](http://necolas.github.com/normalize.css/)
 * [string.js](http://stringjs.com/)
 * [js-url](https://github.com/websanova/js-url)
 * [director](https://github.com/flatiron/director)
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/)
 
 ##Setup
 
-#####Step 1: Install NodeJS
+#####Step 1: Install nodeJS
 
 Use the [installer](http://nodejs.org/download/) for initial installation and updates.
 
@@ -82,7 +85,8 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
     "js-url": "https://github.com/websanova/js-url.git#~1.7.5",
     "director": "https://github.com/flatiron/director.git#~1.1.10",
     "handlebars.js": "~1.0.8",
-    "yepnope": "~1.5.4"
+    "yepnope": "~1.5.4",
+    "font-awesome": "~3.0.2"
 }
 ```
 
@@ -90,7 +94,7 @@ The above code can be found in `component.json`
 
 #####Step 5: Configure port in server.js
 
-Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, based on the code below, once the server was running the html pages found in `/public` would be avaliable at `http://localhost:3044`.
+Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, based on the code below, once the server was running the html pages found in `/public` would be available at `http://localhost:3044`.
 
 
 ```js
@@ -114,6 +118,27 @@ This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVODED
 
 ##Configuration
 
+#####Step 1: Change namespace
+
+Open the `public/global.js` file and change the global namespace (default is `sfb`) used for each html.
+
+Open each default module:
+
+* `public/modules/moduleA.modulesA.js`
+* `public/modules/moduleA.modulesB.js`
+* `public/modules/moduleA.modulesC.js`
+
+Update the namespace used in the module files (i.e. replace `sfb` with your custom namespace).
+
+
 ##Build
+
+Go to the root directory and run:
+
+```js
+> grunt
+```
+
+This will create minified versions of the all the css, js, and .hbs files in `public/build/`. Have a look at the `grunt.js` file to configure the build.
 
 ##Explanation

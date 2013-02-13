@@ -1,4 +1,4 @@
-window.moduleB = function(win, doc, undefined, $, _, Modernizr){
+window.sfb.moduleB = function(win, doc, undefined, $, _, Modernizr){
 
 	var compiledModuleBTemplate = Handlebars.getTemplate('/modules/moduleB/moduleB.hbs');
 
