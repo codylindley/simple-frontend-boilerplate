@@ -11,9 +11,11 @@ module.exports = function(grunt) {
     mincss: {
       index: {
         files: {
-          "public/build/index.min.css": [
-            "public/libraries/thirdparty/normalize-css/normalize.css",
-            "public/globals.css"
+          'public/build/index.min.css': [
+            'public/libraries/thirdparty/normalize-css/normalize.css',
+            'public/libraries/customTwitterBootstrap/bootstrapBase.css',
+            'public/libraries/thirdparty/font-awesome/css/font-awesome.css',
+            'public/globals.css'
           ]
         }
       }

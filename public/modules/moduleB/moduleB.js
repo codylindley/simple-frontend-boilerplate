@@ -1,5 +1,6 @@
 window.moduleB = function(win, doc, undefined, $, _){
 
+	var compiledModuleBTemplate = Handlebars.getTemplate('/modules/moduleB/moduleB.hbs');
 
 	//private properties
 	var privateValue = 'privateValue';
@@ -15,6 +16,12 @@ window.moduleB = function(win, doc, undefined, $, _){
 
 	//initalize
 	var initialize = function(){
+
+
+
+		var moduleBDataAndView = compiledModuleBTemplate({ name : 'I am module B' });
+
+		$('body').append(moduleBDataAndView);
 
 		console.log(privateValue,privateMethod(),publicValue,publicMethod());
 

@@ -10,6 +10,7 @@
     "js-url": "https://github.com/websanova/js-url.git#~1.7.5",
     "director": "https://github.com/flatiron/director.git#~1.1.10",
     "handlebars.js": "~1.0.8",
-    "yepnope": "~1.5.4"
+    "yepnope": "~1.5.4",
+    "font-awesome": "~3.0.2"
   }
 }

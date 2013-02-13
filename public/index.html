@@ -23,24 +23,35 @@
 
         <script>
             if(window.location.hostname === 'localhost'){
-                yepnope({load:[
-                    //Libraries used on this page
-                    '/libraries/thirdparty/normalize-css/normalize.css',
-                    //global css
-                    '/globals.css'
-                    //Modules css used on this page
-                ]});
+                yepnope({
+                    load:[
+                        //Libraries used on this page
+                        '/libraries/thirdparty/normalize-css/normalize.css',
+                        '/libraries/customTwitterBootstrap/bootstrapBase.css',
+                        '/libraries/thirdparty/font-awesome/css/font-awesome.css',
+                        //global css
+                        '/globals.css',
+                        //Modules css used on this page
+                        '/modules/moduleA/moduleA.css',
+                        '/modules/moduleB/moduleB.css',
+                        '/modules/moduleC/moduleC.css'
+                    ],
+                    complete: function(){document.body.style.display = "block"}
+                });
             }else{
-                yepnope({load:
-                    '/build/index.min.css'
+                yepnope({
+                    load:'/build/index.min.css',
+                    complete: function(){document.body.style.display = "block"}
                 });
             }
         </script>
 
     </head>
-    <body>
+    <body style="display:none;">
 
-        <p>Hello world! This is T7 Simple Frontend Boilerplate</p>
+        <h1>Simple Frontend Boilerplate</h1>
+
+        <p class="lead">A starting point to develop websites or web applications without forcing a specific MV* framework or modular loader.</p>
 
         <script>
             if(window.location.hostname === 'localhost'){
@@ -58,7 +69,8 @@
                     '/globals.js',
                     //Modules used on this page
                     '/modules/moduleA/moduleA.js',
-                    '/modules/moduleB/moduleB.js'
+                    '/modules/moduleB/moduleB.js',
+                    '/modules/moduleC/moduleC.js'
                 ]});
             }else{
                 yepnope({load:

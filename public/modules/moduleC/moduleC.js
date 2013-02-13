@@ -1,7 +1,7 @@
-window.moduleA = function(win, doc, undefined, $, _){
+window.moduleC = function(win, doc, undefined, $, _){
 
 
-	var compiledModuleATemplate = Handlebars.getTemplate('/modules/moduleA/moduleA.hbs');
+	var compiledModuleCTemplate = Handlebars.getTemplate('/modules/moduleC/moduleC.hbs');
 
 	//private properties
 	var privateValue = 'privateValue';
@@ -18,9 +18,9 @@ window.moduleA = function(win, doc, undefined, $, _){
 	//initalize
 	var initialize = function(){
 
-		var moduleADataAndView = compiledModuleATemplate({ name : 'I am module A' });
+		var moduleCDataAndView = compiledModuleCTemplate({ name : 'I am module C' });
 
-		$('body').append(moduleADataAndView);
+		$('body').append(moduleCDataAndView);
 
 		console.log(privateValue,privateMethod(),publicValue,publicMethod());
 
