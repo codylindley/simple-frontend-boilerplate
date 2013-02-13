@@ -1,7 +1,7 @@
 //global namespace
 window.sfb = {};
 
-window.sfb.run = function(win, doc, undefined, $, _){
+window.sfb.globals = function(win, doc, undefined, $, _){
 
 	//private properties
 	var privateValue = 'privateValue';
@@ -22,10 +22,12 @@ window.sfb.run = function(win, doc, undefined, $, _){
 
 	}();
 
+	console.log(this); //here this is sfb object
+
 	//public, can also place global constants here
 	return {
 		publicValue:publicValue,
 		publicMethod:publicMethod
 	};
 
-}(window, document, undefined, jQuery, _);
+}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);

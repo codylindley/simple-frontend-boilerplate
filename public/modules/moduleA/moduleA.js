@@ -1,6 +1,5 @@
 window.sfb.moduleA = function(win, doc, undefined, $, _, Modernizr){
 
-
 	var compiledModuleATemplate = Handlebars.getTemplate('/modules/moduleA/moduleA.hbs');
 
 	//private properties
@@ -26,10 +25,12 @@ window.sfb.moduleA = function(win, doc, undefined, $, _, Modernizr){
 
 	}();
 
+	console.log(this); //here this is sfb object
+
 	//public interface
 	return {
 		publicValue:publicValue,
 		publicMethod:publicMethod
 	};
 
-}(window, document, undefined, jQuery, _, Modernizr);
+}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);

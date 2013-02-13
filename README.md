@@ -120,9 +120,9 @@ This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVODED
 
 #####Step 1: Change namespace
 
-Open the `public/global.js` file and change the global namespace (default is `sfb`) used for each html.
+Open the `public/global.js` file and change the global namespace (default is `sfb`) to a namespace of your choosing. Make sure you change each occurrence of `sfb`.
 
-Open each default module:
+Additionally, open each default module:
 
 * `public/modules/moduleA.modulesA.js`
 * `public/modules/moduleA.modulesB.js`

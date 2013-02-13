@@ -47,10 +47,14 @@ module.exports = function(grunt) {
           'public/libraries/getHandlerBarsTemp/getHandlerBarsTemp.js',
           //must be after the handler bars files
           'public/build/hbs.js',
+          //global file
+          'public/globals.js',
           //Modules used on this page
           'public/modules/moduleA/moduleA.js',
           'public/modules/moduleB/moduleB.js',
-          'public/modules/moduleC/moduleC.js'
+          'public/modules/moduleC/moduleC.js',
+          //run index.html
+          'public/run/indexRun.js'
         ],
         dest: 'public/build/index.min.js'
       }

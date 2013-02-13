@@ -1,3 +1,4 @@
+
 window.sfb.moduleB = function(win, doc, undefined, $, _, Modernizr){
 
 	var compiledModuleBTemplate = Handlebars.getTemplate('/modules/moduleB/moduleB.hbs');
@@ -17,8 +18,6 @@ window.sfb.moduleB = function(win, doc, undefined, $, _, Modernizr){
 	//initalize
 	var initialize = function(){
 
-
-
 		var moduleBDataAndView = compiledModuleBTemplate({ name : 'I am module B' });
 
 		$('body').append(moduleBDataAndView);
@@ -27,10 +26,12 @@ window.sfb.moduleB = function(win, doc, undefined, $, _, Modernizr){
 
 	}();
 
+	console.log(this); //here this is sfb object
+
 	//public
 	return {
 		publicValue:publicValue,
 		publicMethod:publicMethod
 	};
 
-}(window, document, undefined, jQuery, _, Modernizr);
+}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);

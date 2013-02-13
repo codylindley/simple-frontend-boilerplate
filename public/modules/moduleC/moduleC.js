@@ -26,10 +26,12 @@ window.sfb.moduleC = function(win, doc, undefined, $, _, Modernizr){
 
 	}();
 
+	console.log(this); //here this is sfb object
+
 	//public interface
 	return {
 		publicValue:publicValue,
 		publicMethod:publicMethod
 	};
 
-}(window, document, undefined, jQuery, _, Modernizr);
+}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);
