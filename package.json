@@ -1,10 +1,12 @@
 {
-  "name": "t7-Simple-Frontend-Boilerplate",
+  "name": "Simple-Frontend-Boilerplate",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "grunt": "latest",
     "connect": "latest",
-    "bower": "latest"
+    "bower": "latest",
+    "grunt-contrib-mincss": "~0.3.2",
+    "grunt-handlebars-js": "~0.1.2"
   }
 }
