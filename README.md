@@ -35,13 +35,13 @@ Go to the root directory and run:
 This will install the follow node dependencies in `/node_moduels`:
 
 ```js
-"devDependencies": {
+  "devDependencies": {
     "grunt": "latest",
     "connect": "latest",
     "bower": "latest",
     "grunt-contrib-mincss": "~0.3.2",
-    "grunt-handlebars-js": "~0.1.2"
-}
+    "grunt-contrib-handlebars": "~0.3.5"
+  }
 ```
 
 #####Step 4: Get bower libraries
