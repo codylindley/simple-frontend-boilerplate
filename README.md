@@ -32,7 +32,7 @@ Go to the root directory and run:
 > npm install
 ```
 
-This will install the follow node dependencies in `/node_moduels`:
+This will install the follow node dependencies in `/node_modules`:
 
 ```js
   "devDependencies": {
@@ -46,7 +46,8 @@ This will install the follow node dependencies in `/node_moduels`:
 
 #####Step 4: Get bower libraries
 
-You can configure what bower retrieves by editing the dependencies in the `component.json` before running the install command. Remove or add anything you want or checkout the Bower components
+You can configure what [bower](http://sindresorhus.com/bower-components/) retrieves by editing the dependencies in the `component.json` before running the install command.
+
 Go to the root directory and run:
 
 ```js
