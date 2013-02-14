@@ -17,6 +17,7 @@ A starting point to develop websites or small web applications without forcing a
 	* [run](run)
 	* [yepnope](yepnope)
 	* [handlebars](handlebars)
+* [Folder Structure](folder-structure)
 
 ---
 
@@ -195,3 +196,27 @@ I am using yepnope.js as a module loader for CSS and JS. It has the added bonus 
 #####handlerbars.js
 
 Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go really fast. Additionally, if you think about it they can be used for client-side includes as well.
+
+##Folder STructure
+
+├── build
+├── favicon.ico
+├── globals.css
+├── globals.js
+├── index.html
+├── libraries
+├── modules
+│   ├── moduleA
+│   │   ├── moduleA.css
+│   │   ├── moduleA.hbs
+│   │   └── moduleA.js
+│   ├── moduleB
+│   │   ├── moduleB.css
+│   │   ├── moduleB.hbs
+│   │   └── moduleB.js
+│   └── moduleC
+│       ├── moduleC.css
+│       ├── moduleC.hbs
+│       └── moduleC.js
+└── run
+    └── indexRun.js
