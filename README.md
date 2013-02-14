@@ -9,15 +9,16 @@ A starting point to develop websites or small web applications without forcing a
 * [Configuration](#configuration)
 * [Build](#build)
 * [Explanation](#explanation)
-	* [why](why)
-	* [nodeJS & npm](nodeJS-&-npm)
-	* [global.js & global.css](global.js-&-global.css)
-	* [libraries](libraries)
-	* [modules](modules)
+	* [why](#why)
+	* [nodeJS & npm](#nodeJS-&-npm)
+	* [global.js & global.css](#global.js-&-global.css)
+	* [libraries](#libraries)
+	* [modules](#modules)
 	* [run](run)
-	* [yepnope](yepnope)
-	* [handlebars](handlebars)
-* [Folder Structure](folder-structure)
+	* [yepnope](#yepnope)
+	* [handlebars](#handlebars)
+	* [building](#building)
+* [Folder Structure](#folder-structure)
 
 ---
 
@@ -197,14 +198,26 @@ I am using yepnope.js as a module loader for CSS and JS. It has the added bonus 
 
 Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go really fast. Additionally, if you think about it they can be used for client-side includes as well.
 
+#####build
+
 ##Folder STructure
 
 	├── build
+	│   ├── hbs.js
+	│   ├── index.min.css
+	│   └── index.min.js
 	├── favicon.ico
 	├── globals.css
 	├── globals.js
 	├── index.html
 	├── libraries
+	│   ├── customTwitterBootstrap
+	│   │   └── bootstrapBase.css
+	│   ├── getHandlerBarsTemp
+	│   │   └── getHandlerBarsTemp.js
+	│   ├── projectSpecificLibrary
+	│   │   └── projectSpecificLib.js
+	│   └── thirdparty
 	├── modules
 	│   ├── moduleA
 	│   │   ├── moduleA.css
@@ -219,5 +232,5 @@ Handlebars templates provide HTML templates for use in modules. As well, they ca
 	│       ├── moduleC.hbs
 	│       └── moduleC.js
 	└── run
-	    └── indexRun.js
+		    └── indexRun.js
 
