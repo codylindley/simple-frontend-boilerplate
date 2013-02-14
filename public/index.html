@@ -19,8 +19,10 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <!-- only blocking script tag used -->
         <script src="/libraries/thirdparty/yepnope/yepnope.1.5.4-min.js"></script>
 
+        <!-- load css -->
         <script>
             /*if you are developing on http://localhost:XXXX load individual files or force build file use with ?compress=false*/
             var url = window.location;
@@ -42,12 +44,12 @@
                         '/modules/moduleB/moduleB.css',
                         '/modules/moduleC/moduleC.css'
                     ],
-                    complete: function(){document.body.style.display = "block"}
+                    complete: function(){document.body.style.display = "block"} //avoid css flicker
                 });
             }else{
                 yepnope({
                     load:'/build/index.min.css?v=0-1-0', //css build file
-                    complete: function(){document.body.style.display = "block"}
+                    complete: function(){document.body.style.display = "block"} //avoid css flicker
                 });
             }
         </script>
@@ -61,6 +63,7 @@
 
         <p>Example below of loading modules A, B, and C. All of which use a handlebars template.</p>
 
+        <!-- load js -->
         <script>
             /*if you are developing on http://localhost:XXXX load individual files or force build file use with ?compress=false*/
             var url = window.location;
