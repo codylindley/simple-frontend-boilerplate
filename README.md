@@ -198,9 +198,19 @@ I am using yepnope.js as a module loader for CSS and JS. It has the added bonus 
 
 Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go really fast. Additionally, if you think about it they can be used for client-side includes as well.
 
-#####build
+#####building
 
-##Folder STructure
+The build process does 4 things. 
+
+1. add `?v=0-1-0` to the end of the minified CSS and JS file's to bust cache when build version changes 
+2. compile all handlebar templates used in development and put them in `/build/hbs.js`
+3. minify all CSS and place it in `/build/index.min.css`
+4. minify all JS and place it in `/build/index.min.js`
+
+When you are running the code locally the html pages, using yepnope, load the CSS and HTML individually. When you are not running the webpages from a localhost the webpages attempt to use the minified files. As well, the handlebar files are compiled at run time instead of being pre-compiled.
+
+
+##Folder Structure
 
 	├── build
 	│   ├── hbs.js
