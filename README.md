@@ -199,24 +199,25 @@ Handlebars templates provide HTML templates for use in modules. As well, they ca
 
 ##Folder STructure
 
-├── build
-├── favicon.ico
-├── globals.css
-├── globals.js
-├── index.html
-├── libraries
-├── modules
-│   ├── moduleA
-│   │   ├── moduleA.css
-│   │   ├── moduleA.hbs
-│   │   └── moduleA.js
-│   ├── moduleB
-│   │   ├── moduleB.css
-│   │   ├── moduleB.hbs
-│   │   └── moduleB.js
-│   └── moduleC
-│       ├── moduleC.css
-│       ├── moduleC.hbs
-│       └── moduleC.js
-└── run
-    └── indexRun.js
+	├── build
+	├── favicon.ico
+	├── globals.css
+	├── globals.js
+	├── index.html
+	├── libraries
+	├── modules
+	│   ├── moduleA
+	│   │   ├── moduleA.css
+	│   │   ├── moduleA.hbs
+	│   │   └── moduleA.js
+	│   ├── moduleB
+	│   │   ├── moduleB.css
+	│   │   ├── moduleB.hbs
+	│   │   └── moduleB.js
+	│   └── moduleC
+	│       ├── moduleC.css
+	│       ├── moduleC.hbs
+	│       └── moduleC.js
+	└── run
+	    └── indexRun.js
+
