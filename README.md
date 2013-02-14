@@ -36,7 +36,7 @@ A starting point to develop websites or small web applications without forcing a
 
 #####Step 1: Install nodeJS
 
-Use the [installer](http://nodejs.org/download/) for initial installation and updates.
+Use the [installer](http://nodejs.org/download/) for initial installation as well as updates to nodeJS and NPM.
 
 #####Step 2: Download Code
 
