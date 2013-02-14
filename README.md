@@ -188,7 +188,7 @@ The modules directory contains all of the modules used in the project. Modules a
 
 #####run
 
-The run directory will contain one file for each web page in the project. This should always be the  last JS file invoked for a page. It's provided so that once all the libraries, globals, and modules are loaded you can do something with them. In other words, run is where you put all of the code that actually makes use of libraries, globals, and modules.
+The run directory will contain one file for each web page in the project. This should always be the  last JS file invoked for a page. It's provided so that once all the libraries, globals, and modules are loaded you can do something with them. In other words, run is where you put all of the code that actually makes use of libraries, globals, and modules code.
 
 #####yepnope.js
 
