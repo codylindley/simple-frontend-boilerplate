@@ -22,7 +22,13 @@
         <script src="/libraries/thirdparty/yepnope/yepnope.1.5.4-min.js"></script>
 
         <script>
-            if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
+            /*if you are developing on http://localhost:XXXX load individual files or force build file use with ?compress=false*/
+            var url = window.location;
+            if(
+                url.search.indexOf('compress=false') === 1 ||
+                url.hostname === 'localhost' && 
+                url.search.indexOf('compress=true') === -1
+            ){
                 yepnope({
                     load:[
                         //CSS libraries used on this page
@@ -31,7 +37,7 @@
                         '/libraries/thirdparty/font-awesome/css/font-awesome.css',
                         //global css file
                         '/globals.css',
-                        //CSS module used on this page
+                        //CSS modules used on this page
                         '/modules/moduleA/moduleA.css',
                         '/modules/moduleB/moduleB.css',
                         '/modules/moduleC/moduleC.css'
@@ -40,7 +46,7 @@
                 });
             }else{
                 yepnope({
-                    load:'/build/index.min.css?v=0.1.0',
+                    load:'/build/index.min.css?v=0-1-0', //css build file
                     complete: function(){document.body.style.display = "block"}
                 });
             }
@@ -56,7 +62,13 @@
         <p>Example below of loading modules A, B, and C. All of which use a handlebars template.</p>
 
         <script>
-            if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
+            /*if you are developing on http://localhost:XXXX load individual files or force build file use with ?compress=false*/
+            var url = window.location;
+            if(
+                url.search.indexOf('compress=false') === 1 ||
+                url.hostname === 'localhost' && 
+                url.search.indexOf('compress=true') === -1
+            ){
                 yepnope({load:[
                     //JS Libraries used on this page
                     '/libraries/thirdparty/jquery/jquery.js', 
@@ -76,9 +88,9 @@
                     //run index.html
                     '/run/indexRun.js'
                 ]});
-            }else{
+            }else{ //if this is not on localhost use build file or force build file use with ?compress=true
                 yepnope({load:
-                    '/build/index.min.js?v=0.1.0'
+                    '/build/index.min.js?v=0-1-0' //js build file
                 });
             }
         </script>

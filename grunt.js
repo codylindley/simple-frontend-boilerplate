@@ -1,16 +1,16 @@
 /*global module:false*/
 module.exports = function(grunt) {
-console.log(grunt.template.today);
+
   // Project configuration.
   grunt.initConfig({
 
     replace: {
       another_example: {
         src: ['public/**/*.html'],
-        overwrite: true, 
+        overwrite: true,
         replacements: [{
-          from: '?v=',
-          to: '?v=0.1.0' //adds version number to bust cache on html and css
+          from: /v=[0-9]\-[0-9]\-[0-9]/g,
+          to: 'v=0-1-0' //adds version number to bust cache on html and css
         }]
       }
     },
