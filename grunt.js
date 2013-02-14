@@ -1,8 +1,19 @@
 /*global module:false*/
 module.exports = function(grunt) {
-
+console.log(grunt.template.today);
   // Project configuration.
   grunt.initConfig({
+
+    replace: {
+      another_example: {
+        src: ['public/**/*.html'],
+        overwrite: true, 
+        replacements: [{
+          from: '?v=',
+          to: '?v=0.1.0' //adds version number to bust cache on html and css
+        }]
+      }
+    },
 
     handlebars: {
       compile: {
@@ -48,7 +59,7 @@ module.exports = function(grunt) {
           'public/libraries/thirdparty/director/build/director.js',
           'public/libraries/thirdparty/handlebars.js/dist/handlebars.runtime.js',
           'public/libraries/getHandlerBarsTemp/getHandlerBarsTemp.js',
-          //must be after the handler bars files
+          //NOTICE we are placing all handlerbar templates for everypage here
           'public/build/hbs.js',
           //global file
           'public/globals.js',
@@ -67,8 +78,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-mincss');
   grunt.loadNpmTasks('grunt-contrib-handlebars');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   // Default task.
-  grunt.registerTask('default', ['handlebars','mincss','min']);
+  grunt.registerTask('default', ['handlebars','mincss','min','replace']);
 
 };

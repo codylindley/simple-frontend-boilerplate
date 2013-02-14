@@ -2,7 +2,7 @@
 #Simple Frontend Boilerplate
 ---
 
-A starting point to develop websites or small web applications without forcing a specific MV* framework or module loader. It could be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
+A starting point to develop websites or small web applications without forcing a specific MV* framework or module loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
 
 * [The Stack](#the-stack)
 * [Startup](#startup)
@@ -18,6 +18,7 @@ A starting point to develop websites or small web applications without forcing a
 	* [grunt](http://gruntjs.com/)
 		* [grunt-contrib-mincss](https://github.com/gruntjs/grunt-contrib-mincss)
 		* [grunt-contrib-handlebars](https://github.com/gruntjs/grunt-contrib-handlebars)
+		* [grunt-text-replace](https://npmjs.org/package/grunt-text-replace)
 	* [connect](http://www.senchalabs.org/connect/)
 	* [bower](http://twitter.github.com/bower/)
 * [jQuery](http://jquery.com/)
@@ -57,7 +58,8 @@ This will install the follow node dependencies in `/node_modules`:
     "connect": "latest",
     "bower": "latest",
     "grunt-contrib-mincss": "~0.3.2",
-    "grunt-contrib-handlebars": "~0.3.5"
+    "grunt-contrib-handlebars": "~0.3.5",
+    "grunt-text-replace": "~0.2.10"
 }
 ```
 

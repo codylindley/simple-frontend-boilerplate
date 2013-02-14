@@ -40,7 +40,7 @@
                 });
             }else{
                 yepnope({
-                    load:'/build/index.min.css',
+                    load:'/build/index.min.css?v=0.1.0',
                     complete: function(){document.body.style.display = "block"}
                 });
             }
@@ -51,7 +51,9 @@
 
         <h1>Simple Frontend Boilerplate</h1>
 
-        <p class="lead">A starting point to develop websites or web applications without forcing a specific MV* framework or modular loader.</p>
+        <p class="lead">A starting point to develop websites or small web applications without forcing a specific MV* framework or module loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of yepnope.</p>
+
+        <p>Example below of loading modules A, B, and C. All of which use a handlebars template.</p>
 
         <script>
             if(window.location.hostname === 'localhost' && window.location.search.indexOf('compress=true') === -1){
@@ -76,7 +78,7 @@
                 ]});
             }else{
                 yepnope({load:
-                    '/build/index.min.js'
+                    '/build/index.min.js?v=0.1.0'
                 });
             }
         </script>

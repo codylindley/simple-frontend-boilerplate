@@ -33,4 +33,4 @@ window.sfb.moduleA = function(win, doc, undefined, $, _, Modernizr){
 		publicMethod:publicMethod
 	};
 
-}. window, document, undefined, jQuery, _, Modernizr);
+}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);
