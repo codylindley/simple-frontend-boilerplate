@@ -116,7 +116,7 @@ Go to the root directory and run:
 > node server.js
 ```
 
-This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5` (e.g. `http://localhost:3044`). Now open a web browser and visit the `http://localhost:PORT NUMBER PROVODED IN SET IN SETUP STEP 5`
+This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVIDED IN SET IN SETUP STEP 5` (e.g. `http://localhost:3044`). Now open a web browser and visit the `http://localhost:PORT NUMBER PROVIDED IN SET IN SETUP STEP 5`
 
 ##Configuration
 
