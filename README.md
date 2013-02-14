@@ -144,7 +144,7 @@ Go to the root directory and run:
 
 This will create minified versions of the css and js files and precompile the handlebars files in `public/build/`. Have a look at the `grunt.js` file to configure the build.
 
-After running the first build, its possible to use the minified files when viewing in a browser by adding `?compress=true` to the end of the url.
+After running the first build, its possible to use the minified files locally when viewing in a browser by adding `?compress=true` to the end of the url.
 
 ##Explanation
 
