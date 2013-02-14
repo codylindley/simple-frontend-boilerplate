@@ -48,6 +48,7 @@ Go to the root directory and run:
 
 ```js
 > npm install
+
 ```
 
 This will install the follow node dependencies in `/node_modules`:
@@ -63,7 +64,7 @@ This will install the follow node dependencies in `/node_modules`:
 }
 ```
 
-The above code can be found in `package.json`
+The above code can be found in `package.json`. If you plan on adding or removing nodejs npm packages I suggest using `--save-dev` flag so that your `package.json` file stays update as you make changes.
 
 #####Step 4: Get bower libraries
 
@@ -92,7 +93,7 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
 }
 ```
 
-The above code can be found in `component.json`
+The above code can be found in `component.json`. If you plan on adding or removing bower components I suggest using `--save` flag so that your `component.json` file stays update as you make changes.
 
 #####Step 5: Configure port in server.js
 
