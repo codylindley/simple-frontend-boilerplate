@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'public/build/hbs.js': 'public/modules/**/*.hbs'
+          'public/build/hbs.compiled.js': 'public/modules/**/*.hbs'
         }
       }
     },
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           'public/libraries/thirdparty/handlebars.js/dist/handlebars.runtime.js',
           'public/libraries/getHandlerBarsTemp/getHandlerBarsTemp.js',
           //NOTICE we are placing all handlerbar templates for everypage here
-          'public/build/hbs.js',
+          'public/build/hbs.compiled.js',
           //global file
           'public/globals.js',
           //Modules used on this page
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           'public/modules/moduleB/moduleB.js',
           'public/modules/moduleC/moduleC.js',
           //run index.html
-          'public/run/indexRun.js'
+          'public/run/index.run.js'
         ],
         dest: 'public/build/index.min.js'
       }
