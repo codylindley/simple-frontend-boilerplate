@@ -210,7 +210,7 @@ The build process does 4 things.
 When you are running the code locally the html pages, using yepnope, load the CSS and HTML individually. When you are not running the webpages from a localhost the webpages attempt to use the minified files. As well, the handlebar files are compiled at run time instead of being pre-compiled.
 
 
-##Folder Structure
+##Folder Structure `/public`
 
 	├── build
 	│   ├── hbs.js
