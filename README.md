@@ -2,7 +2,7 @@
 #Simple Frontend Boilerplate
 ---
 
-A starting point to develop websites or small web applications without forcing a specific MV* framework or module loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
+A starting point to develop websites or small web applications without forcing a specific MV* framework or module dependancy loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
 
 * [The Stack](#the-stack)
 * [Startup](#startup)
@@ -159,7 +159,7 @@ After running the first build, its possible to use the minified files locally wh
 
 #####Why
 
-Because not every project requires an AMD/CommonJS loader or some degree of MV\*. In fact, simple and small is always better than over optimizing or planning for the unknown. Additionally, without a boilerplate like this, one might never really grok why moving to the next level of application organization is necessary. When you find the pain points with this simple organization, its time to consider a loader and MV\*. Mostly so that you can take advantage of things like, dependency management, data binding, and framework features.
+Because not every project requires an AMD/CommonJS dependancy loader or some degree of MV\*. In fact, simple and small is always better than over optimizing or planning for the unknown. Additionally, without a boilerplate like this, one might never really grok why moving to the next level of application organization is necessary. When you find the pain points with this simple organization, its time to consider a loader and MV\*. Mostly so that you can take advantage of things like, dependency management, data binding, and framework features.
 
 #####nodeJS & npm
 
