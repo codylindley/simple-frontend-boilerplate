@@ -187,6 +187,8 @@ The modules directory contains all of the modules used in the project. Modules a
 
 Modules dependancies are managed by order of inclusion in an HTML page.
 
+If you haven't ever thought about modules I'd suggest [reading up on the topic](http://msdn.microsoft.com/en-us/library/hh404079.aspx).
+
 #####run
 
 The run directory will contain one file for each web page in the project. This should always be the  last JS file invoked for a page. It's provided so that once all the libraries, globals, and modules are loaded you can do something with all them together. In other words, run is where you put all of the code that actually makes use of libraries, globals, and modules code.
