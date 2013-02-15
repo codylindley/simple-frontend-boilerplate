@@ -216,7 +216,7 @@ When you are running the code locally the html pages, using yepnope, load the CS
 ##Folder Structure `/public`
 
 	├── build
-	│   ├── hbs.js
+	│   ├── hbs.compile.js
 	│   ├── index.min.css
 	│   └── index.min.js
 	├── favicon.ico
@@ -245,5 +245,5 @@ When you are running the code locally the html pages, using yepnope, load the CS
 	│       ├── moduleC.hbs
 	│       └── moduleC.js
 	└── run
-		    └── indexRun.js
+		    └── index.run.js
 
