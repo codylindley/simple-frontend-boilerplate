@@ -151,9 +151,9 @@ Go to the root directory and run:
 > grunt
 ```
 
-This will create minified versions of the css and js files and precompile the handlebars files in `public/build/`. Have a look at the `grunt.js` file to configure the build.
+This will create minified versions of the css and js files and precompile the handlebars files, placing each in `public/build/`. Have a look at the `grunt.js` file to configure the build.
 
-After running the first build, its possible to use the minified files locally when viewing in a browser by adding `?compress=true` to the end of the url.
+After running the first build, its possible to use the minified files locally when viewing in a browser by adding `?compress=true` to the end of the url (i.e. `http://localhost:XXXX?compress=true`).
 
 ##Explanation
 
@@ -185,17 +185,19 @@ The `/libraries` directory contains all of the project specific libraries used i
 
 The modules directory contains all of the modules used in the project. Modules are contained in there own folder. Each module is made up of one or more CSS, JS, or HBS (aka handlebars templates) files. The JS files in modules follows the module pattern. Note that when the module is parsed the scope of the function that produces the module is bound to the namespace object. Thus, the value `this` will be the namespace object. Which is handy for getting at global values in the `globals` object. Think of modules as a private scope where you can pass in any global or library code you would like to use in the module.
 
+Modules dependancies are managed by order of inclusion in an HTML page.
+
 #####run
 
-The run directory will contain one file for each web page in the project. This should always be the  last JS file invoked for a page. It's provided so that once all the libraries, globals, and modules are loaded you can do something with them. In other words, run is where you put all of the code that actually makes use of libraries, globals, and modules code.
+The run directory will contain one file for each web page in the project. This should always be the  last JS file invoked for a page. It's provided so that once all the libraries, globals, and modules are loaded you can do something with all them together. In other words, run is where you put all of the code that actually makes use of libraries, globals, and modules code.
 
 #####yepnope.js
 
-I am using yepnope.js as a module loader for CSS and JS. It has the added bonus of doing some clever feature loading but really I wanted it so that I can load CSS and JS without blocking, but then, make sure the order in the HTML pages, in which I included the files, is honored once the code is parsed.
+I am using yepnope.js as a script and style loader for JavaScript files and CSS files. It has the added bonus of doing some clever feature loading but really I wanted it so that I can load CSS and JS without blocking, but then, make sure the order in the HTML pages, in which I included the files, is honored once the code is parsed.
 
 #####handlerbars.js
 
-Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go really fast. Additionally, if you think about it they can be used for client-side includes as well.
+Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go faster. Additionally, if you think about it they can be used for client-side includes.
 
 #####building
 
