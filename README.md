@@ -58,7 +58,6 @@ Go to the root directory and run:
 
 ```js
 > npm install
-
 ```
 
 This will install the follow node dependencies in `/node_modules`:
