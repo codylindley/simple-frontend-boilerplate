@@ -18,7 +18,7 @@ A starting point to develop websites or small web applications without forcing a
 	* [yepnope](#yepnope)
 	* [handlebars](#handlebars)
 	* [building](#building)
-* [Folder Structure](#folder-structure)
+* [Folder Structure](#folder-structure) for `/public`
 
 ---
 
