@@ -30,7 +30,7 @@ module.exports = function(grunt) {
       }
     },
 
-    mincss: {
+    cssmin: {
       index: {
         files: {
           'public/build/index.min.css': [
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
       }
     },
 
-    min: {
+    uglify: {
       index: {
         src: [
           'public/libraries/thirdparty/jquery/jquery.js',
@@ -76,11 +76,12 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-mincss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
-  grunt.registerTask('default', ['handlebars','mincss','min','replace']);
+  grunt.registerTask('default', ['handlebars','cssmin','uglify','replace']);
 
 };
