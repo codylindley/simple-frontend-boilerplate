@@ -1,7 +1,7 @@
 //global namespace
 window.sfb = {};
 
-window.sfb.globals = function(win, doc, undefined, $, _){
+window.sfb.globals = function(win, doc, $, _, Modernizr, undefined){
 
 	//private properties
 	var privateValue = 'privateValue';
@@ -30,4 +30,4 @@ window.sfb.globals = function(win, doc, undefined, $, _){
 		publicMethod:publicMethod
 	};
 
-}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);
+}.call(window.sfb, window, document, jQuery, _, Modernizr /*, omitted undefined here */);

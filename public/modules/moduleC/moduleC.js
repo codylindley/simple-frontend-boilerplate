@@ -1,4 +1,4 @@
-window.sfb.moduleC = function(win, doc, undefined, $, _, Modernizr){
+window.sfb.moduleC = function(win, doc, $, _, Modernizr){
 
 
 	var compiledModuleCTemplate = Handlebars.getTemplate('/modules/moduleC/moduleC.hbs');
@@ -34,4 +34,4 @@ window.sfb.moduleC = function(win, doc, undefined, $, _, Modernizr){
 		publicMethod:publicMethod
 	};
 
-}.call(window.sfb, window, document, undefined, jQuery, _, Modernizr);
+}.call(window.sfb, window, document, jQuery, _, Modernizr /*, omitted undefined here */);
