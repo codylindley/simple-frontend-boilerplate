@@ -8,7 +8,7 @@
 
         <!-- This makes sure the latest version of IE is used in versions of IE that contain multiple rendering engines. Even if a site visitor is using IE8 or IE9, it's possible that they're not using the latest rendering engine their browser contains. To fix this, use: -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
+
         <title>Simple Frontend Boilerplate</title>
 
         <!-- Enter a brief description of your page -->
@@ -28,7 +28,7 @@
             var url = window.location;
             if(
                 url.search.indexOf('compress=false') === 1 ||
-                url.hostname === 'localhost' && 
+                url.hostname === 'localhost' &&
                 url.search.indexOf('compress=true') === -1
             ){
                 yepnope({
@@ -71,18 +71,18 @@
             var url = window.location;
             if(
                 url.search.indexOf('compress=false') === 1 ||
-                url.hostname === 'localhost' && 
+                url.hostname === 'localhost' &&
                 url.search.indexOf('compress=true') === -1
             ){
                 yepnope({load:[
                     //JS Libraries used on this page
-                    '/libraries/thirdparty/jquery/jquery.js', 
+                    '/libraries/thirdparty/jquery/jquery.js',
                     '/libraries/thirdparty/lodash/lodash.js',
                     '/libraries/thirdparty/modernizr-latest/index.js',
                     '/libraries/thirdparty/string.js/lib/string.js',
                     '/libraries/thirdparty/director/build/director.js',
                     '/libraries/thirdparty/handlebars.js/dist/handlebars.js',
-                    '/libraries/getHandlerBarsTemp/getHandlerBarsTemp.js',
+                    '/libraries/getHandleBarsTemp/getHandleBarsTemp.js',
                     '/libraries/projectSpecificLibrary/projectSpecificLib.js',
                     //global.js (includes router setup, contants, and initial setup)
                     '/globals.js',
