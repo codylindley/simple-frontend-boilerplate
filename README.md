@@ -26,9 +26,10 @@ A starting point to develop websites or small web applications without forcing a
 
 * [nodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
 	* [grunt](http://gruntjs.com/)
-		* [grunt-contrib-mincss](https://github.com/gruntjs/grunt-contrib-mincss)
+		* [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
 		* [grunt-contrib-handlebars](https://github.com/gruntjs/grunt-contrib-handlebars)
 		* [grunt-text-replace](https://npmjs.org/package/grunt-text-replace)
+		* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 	* [connect](http://www.senchalabs.org/connect/)
 	* [bower](http://twitter.github.com/bower/)
 * [jQuery](http://jquery.com/)
@@ -67,9 +68,10 @@ This will install the follow node dependencies in `/node_modules`:
     "grunt": "latest",
     "connect": "latest",
     "bower": "latest",
-    "grunt-contrib-mincss": "~0.3.2",
-    "grunt-contrib-handlebars": "~0.3.5",
-    "grunt-text-replace": "~0.2.10"
+    "grunt-contrib-handlebars": "~0.5.4",
+    "grunt-text-replace": "~0.3.0",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.4.1"
 }
 ```
 
