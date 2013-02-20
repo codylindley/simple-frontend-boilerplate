@@ -20,8 +20,13 @@ module.exports = function(grunt) {
         options: {
           namespace: 'Handlebars.templates',
           wrapped: true,
-          processName: function(filename) {
-            return filename.split('/').pop().split('.')[0];
+          processName: function(name) {
+            console.log(name.split('/').pop().split('.')[0]);
+            return name.split('/').pop().split('.')[0];
+          },
+          processPartialName: function(name) {
+            console.log('partial:' + name.split('/').pop().split('.')[0]);
+            return name.split('/').pop().split('.')[0];
           }
         },
         files: {
@@ -58,7 +63,7 @@ module.exports = function(grunt) {
           'public/libraries/thirdparty/string.js/lib/string.js',
           'public/libraries/thirdparty/director/build/director.js',
           'public/libraries/thirdparty/handlebars.js/dist/handlebars.runtime.js',
-          'public/libraries/getHandlerBarsTemp/getHandlerBarsTemp.js',
+          'public/libraries/getHandleBarsTemp/getHandleBarsTemp.js',
           //NOTICE we are placing all handlerbar templates for everypage here
           'public/build/hbs.compiled.js',
           //global file
