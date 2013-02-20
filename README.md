@@ -163,17 +163,17 @@ Because not every project requires an AMD/CommonJS dependancy loader or some deg
 
 #####nodeJS & npm
 
-If nodeJS is a mystery to you just think of it as a black box. Its the server part, which allows a web page (e.g. `index.html`) to be servered to `http://localhost:XXXX`. However, if you ever want to get good with grunt and its plugins you'll need to learn some nodeJS basics. 
+If nodeJS is a mystery to you just think of it as a black box. Its the server part, which allows a web page (e.g. `index.html`) to be servered to `http://localhost:XXXX`. However, if you ever want to get good with grunt and its plugins you'll need to learn some nodeJS basics.
 
 npm is a package manager. It simply provides a community repository of libraries that can be used by nodesJS. It does a lot of fancy things but basically its a global stash for community tools which you can include in your projects.
 
 #####bower
 
-Bower is a browser/client-side package manager. Its npm for the browser. They call it a component manager but, again, at the end of the day its simply a repository of community libraries/tools you can pull into your projects for use in a web browser. 
+Bower is a browser/client-side package manager. Its npm for the browser. They call it a component manager but, again, at the end of the day its simply a repository of community libraries/tools you can pull into your projects for use in a web browser.
 
 #####globals.js & global.css
 
-The `global.css` file should contain any CSS that is required everywhere. 
+The `global.css` file should contain any CSS that is required everywhere.
 
 The `global.js` file contains the code to setup a namespace for the project. As well this file setups the global namespace and setups an object in the namespace called `globals` (i.e. `window.namespace.globals`). When the file is parsed by the browser `globals` will contain public properties used everywhere. Its also possible to do some global code setup inside the function that returns these public properties. Think of this as a place to put code that setups global constants, properties, methods, or routing logic. This file is not unique to a web page but should be runnable on any web page.
 
@@ -197,15 +197,15 @@ The run directory will contain one file for each web page in the project. This s
 
 I am using yepnope.js as a script and style loader for JavaScript files and CSS files. It has the added bonus of doing some clever feature loading but really I wanted it so that I can load CSS and JS without blocking, but then, make sure the order in the HTML pages, in which I included the files, is honored once the code is parsed.
 
-#####handlerbars.js
+#####handlebars.js
 
 Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go faster. Additionally, if you think about it they can be used for client-side includes.
 
 #####building
 
-The build process does 4 things. 
+The build process does 4 things.
 
-1. add `?v=0-1-0` to the end of the minified CSS and JS file's to bust cache when build version changes 
+1. add `?v=0-1-0` to the end of the minified CSS and JS file's to bust cache when build version changes
 2. compile all handlebar templates used in development and put them in `/build/hbs.js`
 3. minify all CSS and place it in `/build/index.min.css`
 4. minify all JS and place it in `/build/index.min.js`
@@ -226,8 +226,8 @@ When you are running the code locally the html pages, using yepnope, load the CS
 	├── libraries
 	│   ├── customTwitterBootstrap
 	│   │   └── bootstrapBase.css
-	│   ├── getHandlerBarsTemp
-	│   │   └── getHandlerBarsTemp.js
+	│   ├── getHandleBarsTemp
+	│   │   └── getHandleBarsTemp.js
 	│   ├── projectSpecificLibrary
 	│   │   └── projectSpecificLib.js
 	│   └── thirdparty
@@ -235,7 +235,8 @@ When you are running the code locally the html pages, using yepnope, load the CS
 	│   ├── moduleA
 	│   │   ├── moduleA.css
 	│   │   ├── moduleA.hbs
-	│   │   └── moduleA.js
+    │   │   └── moduleA.js
+    │   │   └── partialA.js
 	│   ├── moduleB
 	│   │   ├── moduleB.css
 	│   │   ├── moduleB.hbs
