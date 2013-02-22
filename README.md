@@ -212,7 +212,7 @@ The build process does 4 things.
 3. minify all CSS and place it in `/build/index.min.css`
 4. minify all JS and place it in `/build/index.min.js`
 
-When you are running the code locally (i.e. http://localhost:XXXX) the index.html page loads the non-minified CSS and JavaScript individually. In addition to this the handlerbar templates are loaded (i.e. AJAX) and compiled ondemand.
+When you are running the code locally (i.e. http://localhost:XXXX) the index.html page loads the non-minified .css and .js files individually. In addition to this the handlerbar templates are loaded (i.e. AJAX) and compiled ondemand.
 
 When you are not running from a localhost the html pages use the minified and comipled files (.html, .css, and .hbs files) found in `build` directory. Keep in mind that this does include all of the handlerbars templates, compliled to a single file.
 
