@@ -2,7 +2,7 @@
 #Simple Frontend Boilerplate
 ---
 
-A starting point to develop websites or small web applications without forcing a specific MV* framework or module dependancy loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
+A starting point to develop websites or small web applications without forcing a specific MV* framework or module dependency loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
 
 * [The Stack](#the-stack)
 * [Startup](#startup)
@@ -161,11 +161,11 @@ After running the first build, its possible to use the minified files locally wh
 
 #####Why
 
-Because not every project requires an AMD/CommonJS dependancy loader or some degree of MV\*. In fact, simple and small is always better than over optimizing or planning for the unknown. Additionally, without a boilerplate like this, one might never really grok why moving to the next level of application organization is necessary. When you find the pain points with this simple organization, its time to consider a loader and MV\*. Mostly so that you can take advantage of things like, dependency management, data binding, and framework features.
+Because not every project requires an AMD/CommonJS dependency loader or some degree of MV\*. In fact, simple and small is always better than over optimizing or planning for the unknown. Additionally, without a boilerplate like this, one might never really grok why moving to the next level of application organization is necessary. When you find the pain points with this simple organization, its time to consider a loader and MV\*. Mostly so that you can take advantage of things like, dependency management, data binding, and framework features.
 
 #####nodeJS & npm
 
-If nodeJS is a mystery to you just think of it as a black box. Its the server part, which allows a web page (e.g. `index.html`) to be servered to `http://localhost:XXXX`. However, if you ever want to get good with grunt and its plugins you'll need to learn some nodeJS basics.
+If nodeJS is a mystery to you just think of it as a black box. Its the server part, which allows a web page (e.g. `index.html`) to be served to `http://localhost:XXXX`. However, if you ever want to get good with grunt and its plugins you'll need to learn some nodeJS basics.
 
 npm is a package manager. It simply provides a community repository of libraries that can be used by nodesJS. It does a lot of fancy things but basically its a global stash for community tools which you can include in your projects.
 
@@ -212,9 +212,9 @@ The build process does 4 things.
 3. minify all CSS and place it in `/build/index.min.css`
 4. minify all JS and place it in `/build/index.min.js`
 
-When you are running the code locally (i.e. http://localhost:XXXX) the index.html page loads the non-minified .css and .js files individually. In addition to this the handlerbar templates are loaded (i.e. AJAX) and compiled ondemand.
+When you are running the code locally (i.e. http://localhost:XXXX) the index.html page loads the non-minified .css and .js files individually. In addition to this the handlebar templates are loaded (i.e. AJAX) and compiled on demand.
 
-When you are not running from a localhost the html pages use the minified and comipled files (.html, .css, and .hbs files) found in `build` directory. Keep in mind that this does include all of the handlerbars templates, compliled to a single file.
+When you are not running from a localhost the html pages use the minified and compiled files (.html, .css, and .hbs files) found in `build` directory. Keep in mind that this does include all of the handlebars templates, compiled to a single file.
 
 
 ##Folder Structure `/public`
