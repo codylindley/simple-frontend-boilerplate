@@ -55,7 +55,7 @@ Either download (i.e. ZIP) or GIT clone this repository so that its on your loca
 
 #####Step 3: Install NPM packages
 
-Go to the root directory and run:
+From the command line, in a terminal, go to the root directory and run:
 
 ```js
 > npm install
@@ -81,7 +81,7 @@ The above code can be found in `package.json`. If you plan on adding or removing
 
 You can configure what [bower](http://sindresorhus.com/bower-components/) retrieves by editing the dependencies in the `component.json` before running the install command.
 
-Go to the root directory and run:
+From the command line, in a terminal, go to the root directory and run:
 
 ```js
 > bower install
@@ -104,7 +104,7 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
 }
 ```
 
-The above code can be found in `component.json`. If you plan on adding or removing bower components I suggest using `--save` flag so that your `component.json` file stays update as you make changes.
+The above code can be found in `component.json`. If you plan on adding or removing bower components I suggest using `--save` flag so that your `component.json` file stays updated as you make changes.
 
 #####Step 5: Configure port in server.js
 
@@ -121,7 +121,7 @@ connect().use(connect.static('public')).listen(3044);
 
 #####Step 1: Start node server
 
-Go to the root directory and run:
+From the command line, in a terminal, go to the root directory and run:
 
 
 ```js
@@ -153,9 +153,9 @@ Go to the root directory and run:
 > grunt
 ```
 
-This will create minified versions of the css and js files and precompile the handlebars files, placing each in `public/build/`. Have a look at the `grunt.js` file to configure the build.
+This will create concatenated & minified version of the css and js files. Additionally it will precompile the handlebars files and place the JavaScript code in a single compiled file. All of this will be sent to `public/build/`. Have a look at the `grunt.js` file to configure the build.
 
-After running the first build, its possible to use the minified files locally when viewing in a browser by adding `?compress=true` to the end of the url (i.e. `http://localhost:XXXX?compress=true`).
+After running the first build, its possible to use the minified files locally when viewing in a browser by adding `?compress=true` to the end of the url (i.e. `http://localhost:XXXX?compress=true`). When you are not running the code locally, and usage of the build files is assumed, you can overwrite the use of the build files by adding `?compress=false` to the end of the url.
 
 ##Explanation
 
