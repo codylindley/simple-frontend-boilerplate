@@ -58,7 +58,7 @@ Either download (i.e. ZIP) or GIT clone this repository so that its on your loca
 From the command line, in a terminal, go to the root directory and run:
 
 ```js
-> npm install -g
+> npm install
 ```
 
 This will install the follow node dependencies in `/node_modules`:
@@ -76,7 +76,7 @@ This will install the follow node dependencies in `/node_modules`:
 
 The above code can be found in `package.json`. If you plan on adding or removing nodejs npm packages I suggest using `--save-dev` flag so that your `package.json` file stays update as you make changes.
 
-#####Step 3: Install bower globally
+#####Step 4: Install bower globally
 
 ```js
 > npm install bower -g
