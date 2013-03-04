@@ -58,7 +58,7 @@ Either download (i.e. ZIP) or GIT clone this repository so that its on your loca
 From the command line, in a terminal, go to the root directory and run:
 
 ```js
-> npm install
+> npm install -g
 ```
 
 This will install the follow node dependencies in `/node_modules`:
