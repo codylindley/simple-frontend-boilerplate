@@ -31,7 +31,7 @@ A starting point to develop websites or small web applications without forcing a
 		* [grunt-text-replace](https://npmjs.org/package/grunt-text-replace)
 		* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 	* [connect](http://www.senchalabs.org/connect/)
-	* [bower](http://twitter.github.com/bower/)
+	* [bower](http://twitter.github.com/bower/) installed globally!
 * [jQuery](http://jquery.com/)
 * [lodash](http://lodash.com/)
 * [modernizr](http://modernizr.com/)
@@ -67,7 +67,6 @@ This will install the follow node dependencies in `/node_modules`:
 "devDependencies": {
     "grunt": "latest",
     "connect": "latest",
-    "bower": "latest",
     "grunt-contrib-handlebars": "~0.5.4",
     "grunt-text-replace": "~0.3.0",
     "grunt-contrib-uglify": "~0.1.1",
@@ -77,7 +76,13 @@ This will install the follow node dependencies in `/node_modules`:
 
 The above code can be found in `package.json`. If you plan on adding or removing nodejs npm packages I suggest using `--save-dev` flag so that your `package.json` file stays update as you make changes.
 
-#####Step 4: Get bower libraries
+#####Step 3: Install bower globally
+
+```js
+> npm install bower -g
+```
+
+#####Step 5: Get bower libraries
 
 You can configure what [bower](http://sindresorhus.com/bower-components/) retrieves by editing the dependencies in the `component.json` before running the install command.
 
@@ -106,7 +111,7 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
 
 The above code can be found in `component.json`. If you plan on adding or removing bower components I suggest using `--save` flag so that your `component.json` file stays updated as you make changes.
 
-#####Step 5: Configure port in server.js
+#####Step 6: Configure port in server.js
 
 Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, based on the code below, once the server was running the html pages found in `/public` would be available at `http://localhost:3044`.
 
