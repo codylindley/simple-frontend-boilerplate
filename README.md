@@ -1,5 +1,5 @@
 ---
-#Simple Frontend Boilerplate
+# Simple Frontend Boilerplate
 ---
 
 A starting point to develop websites or small web applications without forcing a specific MV* framework or module dependency loader. This boilerplate can be used for simple websites, websites with minimal application like interfaces, or very small web applications that only require a handful of modules not hundreds. The boilerplate is flexible in that it could be used for a single page architecture, a hybrid approach, or a traditional web page architecture. Additionally, its possible to drop the build step and rely on the speed of [yepnope](http://yepnopejs.com/).
@@ -22,7 +22,7 @@ A starting point to develop websites or small web applications without forcing a
 
 ---
 
-##The Stack
+## The Stack
 
 * [nodeJS](http://nodejs.org/) & [NPM](https://npmjs.org/)
 	* [grunt](http://gruntjs.com/)
@@ -43,17 +43,17 @@ A starting point to develop websites or small web applications without forcing a
 * [director](https://github.com/flatiron/director)
 * [font awesome](http://fortawesome.github.com/Font-Awesome/)
 
-##Setup
+## Setup
 
-#####Step 1: Install nodeJS
+##### Step 1: Install nodeJS
 
 Use the [installer](http://nodejs.org/download/) for initial installation as well as updates to nodeJS and NPM.
 
-#####Step 2: Download Code
+##### Step 2: Download Code
 
 Either download (i.e. ZIP) or GIT clone this repository so that its on your local computer.
 
-#####Step 3: Install NPM packages
+##### Step 3: Install NPM packages
 
 From the command line, in a terminal, go to the root directory and run:
 
@@ -76,13 +76,13 @@ This will install the follow node dependencies in `/node_modules`:
 
 The above code can be found in `package.json`. If you plan on adding or removing nodejs npm packages I suggest using `--save-dev` flag so that your `package.json` file stays update as you make changes.
 
-#####Step 4: Install bower globally
+##### Step 4: Install bower globally
 
 ```js
 > npm install bower -g
 ```
 
-#####Step 5: Get bower libraries
+##### Step 5: Get bower libraries
 
 You can configure what [bower](http://sindresorhus.com/bower-components/) retrieves by editing the dependencies in the `component.json` before running the install command.
 
@@ -111,7 +111,7 @@ This will install the follow libraries in `/public/libraries/thirdparty/`:
 
 The above code can be found in `component.json`. If you plan on adding or removing bower components I suggest using `--save` flag so that your `component.json` file stays updated as you make changes.
 
-#####Step 6: Configure port in server.js
+##### Step 6: Configure port in server.js
 
 Open the `server.js` file in editor of choice and update the port you'd like to server the webpages too. For example, based on the code below, once the server was running the html pages found in `/public` would be available at `http://localhost:3044`.
 
@@ -122,9 +122,9 @@ var connect = require("connect");
 connect().use(connect.static('public')).listen(3044);
 ```
 
-##Startup
+## Startup
 
-#####Step 1: Start node server
+##### Step 1: Start node server
 
 From the command line, in a terminal, go to the root directory and run:
 
@@ -135,9 +135,9 @@ From the command line, in a terminal, go to the root directory and run:
 
 This will run the `/public/index.html` at `http://localhost:PORT NUMBER PROVIDED IN SET IN SETUP STEP 5` (e.g. `http://localhost:3044`). Now open a web browser and visit the `http://localhost:PORT NUMBER PROVIDED IN SET IN SETUP STEP 5`
 
-##Configuration
+## Configuration
 
-#####Step 1: Change namespace
+##### Step 1: Change namespace
 
 Open the `public/global.js` file and change the global namespace (default is `sfb`) to a namespace of your choosing. Make sure you change each occurrence of `sfb`.
 
@@ -150,7 +150,7 @@ Additionally, open each default module:
 Update the namespace used in the module files (i.e. replace `sfb` with your custom namespace).
 
 
-##Build
+## Build
 
 Go to the root directory and run:
 
@@ -162,33 +162,33 @@ This will create concatenated & minified version of the css and js files. Additi
 
 After running the first build, its possible to use the minified files locally when viewing in a browser by adding `?compress=true` to the end of the url (i.e. `http://localhost:XXXX?compress=true`). When you are not running the code locally, and usage of the build files is assumed, you can overwrite the use of the build files by adding `?compress=false` to the end of the url.
 
-##Explanation
+## Explanation
 
-#####Why
+##### Why
 
 Because not every project requires an AMD/CommonJS dependency loader or some degree of MV\*. In fact, simple and small is always better than over optimizing or planning for the unknown. Additionally, without a boilerplate like this, one might never really grok why moving to the next level of application organization is necessary. When you find the pain points with this simple organization, its time to consider a loader and MV\*. Mostly so that you can take advantage of things like, dependency management, data binding, and framework features.
 
-#####nodeJS & npm
+##### nodeJS & npm
 
 If nodeJS is a mystery to you just think of it as a black box. Its the server part, which allows a web page (e.g. `index.html`) to be served to `http://localhost:XXXX`. However, if you ever want to get good with grunt and its plugins you'll need to learn some nodeJS basics.
 
 npm is a package manager. It simply provides a community repository of libraries that can be used by nodesJS. It does a lot of fancy things but basically its a global stash for community tools which you can include in your projects.
 
-#####bower
+##### bower
 
 Bower is a browser/client-side package manager. Its npm for the browser. They call it a component manager but, again, at the end of the day its simply a repository of community libraries/tools you can pull into your projects for use in a web browser.
 
-#####globals.js & global.css
+##### globals.js & global.css
 
 The `global.css` file should contain any CSS that is required everywhere.
 
 The `global.js` file contains the code to setup a namespace for the project. As well this file setups the global namespace and setups an object in the namespace called `globals` (i.e. `window.namespace.globals`). When the file is parsed by the browser `globals` will contain public properties used everywhere. Its also possible to do some global code setup inside the function that returns these public properties. Think of this as a place to put code that setups global constants, properties, methods, or routing logic. This file is not unique to a web page but should be runnable on any web page.
 
-#####libraries
+##### libraries
 
 The `/libraries` directory contains all of the project specific libraries used in the project. All third party libraries that are agnostic to the specifics of the project should be placed in the `/thirdparty` folder. If you customize a third party library make sure to take it out of the `/thirdparty` directory. Libraries are a good place to put code you write for a project that might be worth re-using in another project. Heck, you might even get crazy and place register the code with bower so anyone could use it, in any project.
 
-#####modules
+##### modules
 
 The modules directory contains all of the modules used in the project. Modules are contained in there own folder. Each module is made up of one or more CSS, JS, or HBS (aka handlebars templates) files. The JS files in modules follows the module pattern. Note that when the module is parsed the scope of the function that produces the module is bound to the namespace object. Thus, the value `this` will be the namespace object. Which is handy for getting at global values in the `globals` object. Think of modules as a private scope where you can pass in any global or library code you would like to use in the module.
 
@@ -196,19 +196,19 @@ Modules dependancies are managed by order of inclusion in an HTML page.
 
 If you haven't ever thought about modules I'd suggest [reading up on the topic](http://msdn.microsoft.com/en-us/library/hh404079.aspx).
 
-#####run
+##### run
 
 The run directory will contain one file for each web page in the project. This should always be the  last JS file invoked for a page. It's provided so that once all the libraries, globals, and modules are loaded you can do something with all them together. In other words, run is where you put all of the code that actually makes use of libraries, globals, and modules code.
 
-#####yepnope.js
+##### yepnope.js
 
 I am using yepnope.js as a script and style loader for JavaScript files and CSS files. It has the added bonus of doing some clever feature loading but really I wanted it so that I can load CSS and JS without blocking, but then, make sure the order in the HTML pages, in which I included the files, is honored once the code is parsed.
 
-#####handlebars.js
+##### handlebars.js
 
 Handlebars templates provide HTML templates for use in modules. As well, they can be pre-compiled to make things go faster. Additionally, if you think about it they can be used for client-side includes.
 
-#####building
+##### building
 
 The build process does 4 things.
 
@@ -222,7 +222,7 @@ When you are running the code locally (i.e. http://localhost:XXXX) the index.htm
 When you are not running from a localhost the html pages use the minified and compiled files (.html, .css, and .hbs files) found in `build` directory. Keep in mind that this does include all of the handlebars templates, compiled to a single file.
 
 
-##Folder Structure `/public`
+## Folder Structure `/public`
 
 	├── build
 	│   ├── hbs.compile.js
